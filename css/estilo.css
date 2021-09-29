@@ -4,11 +4,29 @@
     font-weight: normal;
     font-style: normal;
 }
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    }
+    
+#wrapper{
+    min-height: 100%;
+    position: relative;
+}
+
+div.body-content{
+    /** Altura do rodapé tem que ser igual a isso aqui e vice-versa **/
+    padding-bottom: 100px;
+}
 
 .headerPar {
+    font-family: Futura, 'Open Sans', sans-serif;
     background: linear-gradient( 45deg, #005CA9, #54BBAB);
     color: #EFF5F6;
     width: 100%;
+    height: 100px;
+    left: 0;
 }
 
 #texto {
@@ -17,11 +35,8 @@
     text-align: center;
 }
 
-.container {
-    font-family: Futura, 'Open Sans', sans-serif;
-}
-
 #containerPar {
+    font-family: Futura, 'Open Sans', sans-serif;
     justify-content: center;
     color: #005CA9;
     text-align: center;
@@ -31,13 +46,18 @@
     height: auto;
 }
 
-.tabela{
-    font-family: Futura, 'Open Sans', sans-serif;
-    font-size: 0.95rem;
+#tblDadosAdm {
+    background:#ffffff;
+    color: #48586C;
 }
 
-#tabelaGeral {
-    display: none;
+footer{
+    width: 100%;
+    height: 100px;
+    position: absolute;
+    bottom: 0;
+    left: 0; 
+    text-align:end;
 }
 
 @media
@@ -57,14 +77,16 @@
         }
 
         tr:nth-child(odd){
-            background:#ccc;
+            background:#ffffff;
+            color: #48586C;
         }
 
         td{
             border: none;
-            border-bottom: 1px solid #eee;
+            border-bottom: 1px solid #ccc;
             position: relative;
             padding-left: 50%;
+            background: #ffffff;
         }
 
         td:before{
@@ -83,19 +105,4 @@
         td:nth-of-type(5):before {content: "";}
         /* td:nth-of-type(6):before {content: "Whatsapp?";} */
         td:nth-of-type(7):before {content: "";}  
-    }
-
-
-    #footerPar { 
-        background: linear-gradient( 45deg, #005CA9, #54BBAB);     
-        color: #EFF5F6;
-        text-align:end;
-        width: 100%;
-    }
-
-    #footerArrendamento { 
-        background: linear-gradient( 45deg, #005CA9, #54BBAB);     
-        color: #EFF5F6;
-        text-align:end;
-        width: 100%;
     }
