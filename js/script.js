@@ -137,9 +137,7 @@ d = new Date();
                                     </a>`);
                             break 
                             case "Nao":
-                                $('#C'+IdAdm).html(`<a target="_blank" href="tel=+55${telefoneALimpo}" class="cursor-pointer" style="text-decoration:none; color:blue;">
-                                <i class="fas fa-phone"></i> ${telefoneA}
-                            </a>`);
+                                $('#C'+IdAdm).css("color","#48586C");
                             break
                         }
 
@@ -150,9 +148,7 @@ d = new Date();
                                 </a>`);
                             break 
                             case "Nao":
-                                $('#D'+IdAdm).html(`<a target="_blank" href="tel=+55${telefoneBLimpo}" class="cursor-pointer" style="text-decoration:none; color:blue;">
-                                <i class="fas fa-phone"></i> ${telefoneB}
-                            </a>`);
+                                $('#D'+IdAdm).css("color","#48586C");
                             break
                         }
             });
@@ -212,9 +208,7 @@ d = new Date();
                                     </a>`);
                             break 
                             case "Nao":
-                                $('#'+IdAdm).html(`<a target="_blank" href="tel=+55${telefoneALimpo}" class="cursor-pointer" style="text-decoration:none; color:blue;">
-                                    <i class="fas fa-phone"></i> ${telefoneA}
-                                </a>`);
+                                $('#'+IdAdm).css("color","#48586C");
                             break
                         }
 
@@ -225,9 +219,7 @@ d = new Date();
                                 </a>`);
                             break 
                             case "Nao":
-                                $('#B'+IdAdm).html(`<a target="_blank" href="tel=+55${telefoneBLimpo}" class="cursor-pointer" style="text-decoration:none; color:blue;">
-                                    <i class="fas fa-phone"></i> ${telefoneB}
-                                </a>`);
+                                $('#B'+IdAdm).css("color","#48586C");
                             break
                         }
                     
